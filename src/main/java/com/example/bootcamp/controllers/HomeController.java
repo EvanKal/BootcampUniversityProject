@@ -43,7 +43,7 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String loginAction(ModelMap mm,
             @ModelAttribute("logintable") LoginTable logintable,
             HttpSession session

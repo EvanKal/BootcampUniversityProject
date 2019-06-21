@@ -15,6 +15,8 @@
         <title>Bootcamp home page</title>
     </head>
     <body>
+                <p>${uri}</p>
+
         <h1>Successfully logged in as ${user.firstName} ${user.lastName}</h1>
     </body>
 </html>

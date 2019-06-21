@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <p>${uri}</p>
         <p>Please log in</p>
         
         <c:if test="${wrongpassword}">
@@ -19,7 +20,7 @@
         <c:if test="${wrongusername}">
             <p>Wrong Username!!!</p>
         </c:if>
-        <springForm:form method="get" modelAttribute="logintable" action ="${pageContext.request.contextPath}/login">
+        <springForm:form method="post" modelAttribute="logintable" action ="${pageContext.request.contextPath}/login">
             <table>
                 <tr>
                     <td>Username</td>
